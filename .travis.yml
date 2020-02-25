@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 19 00:34:26 2020
+
+@author: Edward
+"""
+
+language: python
+python:
+  - "3.5"
+install:
+  - pip install requests
+  - pip install json
+
+script:
+  - python -m unittest testTriangle.py
