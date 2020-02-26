@@ -74,7 +74,7 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(1,2,2),'Isoceles','1,2,2 should be isoceles')
         
     def testIsocelesTrianglesC(self): 
-        self.assertEqual(classifyTriangle(2,2,1),'Isoceles','1,2,2 should be isoceles')
+        self.assertEqual(classifyTriangle(2,2,1),'Isoceles','2,2,1 should be isoceles')
     
     ##Test Scalene Triangle Case
 
