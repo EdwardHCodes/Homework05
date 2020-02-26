@@ -34,6 +34,12 @@ class TestTriangles(unittest.TestCase):
     def testNotATriangleE(self):
         self.assertEqual(classifyTriangle(1,0,1), 'Not A Triangle', '1,0,1 is not a Triangle')
 
+    def testNotATriangleF(self):
+        self.assertEqual(classifyTriangle(250,300,350),'Invalid Input', '250,300,350 should be invalid')
+
+    def testNotATriangleG(self):
+        self.assertEqual(classifyTriangle(-10, -1, -10),'Invalid Input', '-10,-1,-10 should be invalid')
+
     ##Test Right Triangle Case
 
     def testRightTriangleA(self): 
