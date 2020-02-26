@@ -7,4 +7,4 @@ install:
   - pip install requests
   
 script:
-  - python -m unittest test_Homework05a.py
+  - python -m unittest FixedTestTriangle.py
