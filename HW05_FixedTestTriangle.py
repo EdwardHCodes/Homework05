@@ -18,27 +18,28 @@ from FixedTriangle import classifyTriangle
 class TestTriangles(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
 
-    ##Test Validity of Triangles:
+    ##Test if Triangle:
     def testNotATriangleA(self): 
-        self.assertEqual(classifyTriangle(4,1,3),'Not A Triangle','4,1,3 is not a Triangle')
+        self.assertEqual(classifyTriangle(4,1,3),'NotATriangle','4,1,3 is not a Triangle')
 
     def testNotATriangleB(self): 
-        self.assertEqual(classifyTriangle(1,6,5),'Not A Triangle','1,5,6 is not a Triangle')
+        self.assertEqual(classifyTriangle(1,6,5),'NotATriangle','1,5,6 is not a Triangle')
     
     def testNotATriangleC(self):
-        self.assertEqual(classifyTriangle(1,3,5), 'Not A Triangle','1,3,5 is not a Triangle')
+        self.assertEqual(classifyTriangle(1,3,5), 'NotATriangle','1,3,5 is not a Triangle')
 
     def testNotATriangleD(self):
-        self.assertEqual(classifyTriangle(1,4,5), 'Not A Triangle','1,4,5 is not a Triangle')
+        self.assertEqual(classifyTriangle(1,4,5), 'NotATriangle','1,4,5 is not a Triangle')
         
     def testNotATriangleE(self):
-        self.assertEqual(classifyTriangle(1,0,1), 'Invalid Input','1,0,1 is not a Triangle')
-
+        self.assertEqual(classifyTriangle(1,0,1), 'InvalidInput','1,0,1 is not a Triangle')
+        
+    ##Test if Valid or Not
     def testInvalidInputA(self):
-        self.assertEqual(classifyTriangle(250,300,350),'Invalid Input','250,300,350 should be invalid')
+        self.assertEqual(classifyTriangle(250,300,350),'InvalidInput','250,300,350 should be invalid')
 
     def testInvalidInputB(self):
-        self.assertEqual(classifyTriangle(-10,-1,-10),'Invalid Input','-10,-1,-10 should be invalid')
+        self.assertEqual(classifyTriangle(-10,-1,-10),'InvalidInput','-10,-1,-10 should be invalid')
 
     ##Test Right Triangle Case
     def testRightTriangleA(self): 
@@ -50,7 +51,7 @@ class TestTriangles(unittest.TestCase):
     def testRightTriangleC(self): 
         self.assertEqual(classifyTriangle(5,4,3),'Right','5,4,3 is a Right triangle')
 
-    def testRightTriangleB(self): 
+    def testRightTriangleD(self): 
         self.assertEqual(classifyTriangle(4,5,3),'Right','5,3,4 is a Right triangle')
 
     ##Test Equilateral Triangle Case

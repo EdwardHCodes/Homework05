@@ -27,10 +27,10 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
         
     def testNotATriangleA(self): 
-        self.assertEqual(classifyTriangle(2,2,5),'NotATriangle','2,2,5 should be a triangle')
+        self.assertEqual(classifyTriangle(2,2,5),'NotATriangle','2,2,5 should not be a triangle')
 
     def testNotATriangleB(self): 
-        self.assertEqual(classifyTriangle(3,3,7),'NotATriangle','3,3,7 should be a triangle')
+        self.assertEqual(classifyTriangle(3,3,7),'NotATriangle','3,3,7 should not be a triangle')
 
     def testIsocelesTrianglesA(self): 
         self.assertEqual(classifyTriangle(2,1,2),'Isoceles','2,1,2 should be isoceles')
@@ -38,8 +38,6 @@ class TestTriangles(unittest.TestCase):
     def testIsocelesTrianglesB(self): 
         self.assertEqual(classifyTriangle(1,2,2),'Isoceles','1,2,2 should be isoceles')
     
-        
-
 if __name__ == '__main__':
     print('Running unit tests')
     unittest.main()
