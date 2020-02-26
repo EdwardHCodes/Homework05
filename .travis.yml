@@ -7,4 +7,4 @@ install:
   - pip install requests
   
 script:
-  - python -m unittest FixedTestTriangle.py
+  - python -m unittest HW5_FixedTestTriangle.py
